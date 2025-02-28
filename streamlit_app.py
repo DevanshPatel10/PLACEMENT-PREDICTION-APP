@@ -28,9 +28,10 @@ import pickle
 
 # placement_data = pd.read_csv("/content/PlacementPredictiondata.csv")
 
-# placement_data = pd.read_csv("/workspaces/PLACEMENT-PREDICTION-APP/PlacementPredictiondata.csv")
+placement_data = pd.read_csv("/workspaces/PLACEMENT-PREDICTION-APP/PlacementPredictiondata.csv")
 
-placement_data = pd.read_csv("PlacementPredictiondata.csv")
+# placement_data = pd.read_csv("PlacementPredictiondata.csv")
+
 label_encoder = LabelEncoder()
 placement_data['PlacementStatus'] = label_encoder.fit_transform(placement_data['PlacementStatus'])
 
